@@ -57,7 +57,9 @@ figure {
     margin: 0;
     border: 5px solid var(--color8);
     border-radius: 5px;
+    height: 100%;
 }
+
 
 figcaption {
     background-color: rgba(255, 255, 255, 0.8);
@@ -78,6 +80,51 @@ figcaption a:hover {
     color: var(--color8);
 }
 
-@media (min-width: 550px) {}
 
-@media (min-width: 800px) {}
+
+@media (min-width: 550px) {
+    #popart ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px;
+
+    }
+    .thePlace{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .lippy {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .sugar {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .rebelYell {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .fork {
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+    .drip {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .invade {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .school {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+    .doors {
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+}
